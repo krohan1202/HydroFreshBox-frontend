@@ -24,7 +24,7 @@ function Newsletter() {
       // console.log(values);
     event.preventDefault();
 
-    axios.post("/", {email})
+    axios.post("https://client-hydrofresh.herokuapp.com/", {email})
     .then((values) => {
       console.log(values, email);
       if (values.error) {

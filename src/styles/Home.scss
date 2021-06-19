@@ -116,7 +116,7 @@ a {
   height: 1.56vw;
   top: 1.62vw;
   color: #000;
-
+  z-index: 1;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -399,6 +399,7 @@ a {
   font-family: $helve;
   font-size: 1.22vw;
   opacity: 81%;
+  z-index: 1;
 }
 .process__button--buttonHoverArrow {
   position: absolute;
@@ -577,6 +578,7 @@ a {
   position: relative;
   left: 9vw;
   top: 7.8vw;
+  z-index: 1;
 }
 .footer__Heading {
   position: relative;
@@ -593,7 +595,7 @@ a {
 .footer__FollowUsPart {
   position: absolute;
   left: 47.5vw;
-  top: 263vw;
+  top: 270.8vw;
 }
 .footer__NeedHelpPart {
   left: 63vw;
@@ -633,19 +635,19 @@ a {
   color: #1b1b1b;
 }
 .footer__horizontalLine {
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 47%;
   transform: translate(-50%, 0);
   border: none;
   border-top: 1.4px solid $base-green;
   width: 93.5vw;
-  top: 283.9vw;
+  top: 22.5vw;
 }
 .footer__termsAndConditions,
 .footer__rightsReserved,
 .footer__privacyPolicy {
   position: absolute;
-  top: 284.5vw;
+  top: 293.5vw;
   font-family: $sweet-sans-reg;
   font-size: 0.87vw;
   color: #686868;
@@ -691,6 +693,7 @@ a {
     top: 5.5vw;
     left: 7.8vw;
     width: 20vw;
+    z-index: 1;
   }
   .navlinks__shop,
   .navlinks__about,
@@ -1131,7 +1134,7 @@ a {
     font-family: "Fraunces", serif;
   }
   .menu__NeedHelpPart {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 64vh;
   }
