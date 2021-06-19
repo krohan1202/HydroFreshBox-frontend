@@ -99,7 +99,6 @@ a {
   left: 0;
   top: 0;
   z-index: 2;
-  opacity: 95%;
 }
 .nav__logo {
   position: fixed;
@@ -384,7 +383,7 @@ a {
 .process__button {
   position: relative;
   left: 8.5vw;
-  color: $dark-green;
+  color: #2f643e;
 }
 .process__Heading {
   font-family: $tech-sans;
@@ -398,7 +397,6 @@ a {
   width: 35%;
   font-family: $helve;
   font-size: 1.22vw;
-  opacity: 81%;
   z-index: 1;
 }
 .process__button--buttonHoverArrow {
@@ -1171,5 +1169,8 @@ a {
     position: absolute;
     bottom: 10vh;
     right: 10%;
+  }
+  .count {
+    display: none;
   }
 }
