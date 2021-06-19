@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital@0;1&family=Montserrat&display=swap");
+@font-face {
+  font-family: Gadugi;
+  src: url("./fonts/gadugi-normal.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: sweet-sans-pro-reg;
+  src: url("./fonts/SweetSansProRegular.otf");
+}
+@font-face {
+  font-family: sweet-sans-pro-medium;
+  src: url("./fonts/SweetSansProMedium.otf");
+}
+@font-face {
+  font-family: sweet-sans-pro-bold;
+  src: url("./fonts/SweetSansProBold.otf");
+}
+@font-face {
+  font-family: tech-sans;
+  src: url("./fonts/Technique\ Sans.otf");
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+*::-webkit-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+* ::selection {
+  color: #003f12;
+  background: rgba(0, 172, 133, 0.5);
+}
+*::-moz-selection {
+  background: rgba(0, 172, 133, 0.5);
+}
+
+img {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
