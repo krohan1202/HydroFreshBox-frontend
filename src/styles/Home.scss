@@ -478,8 +478,7 @@ a {
   width: 31.9vw;
   font-family: $helve;
   font-size: 1.2vw;
-  color: $dark-green;
-  opacity: 81%;
+  color: #2f643e;
 }
 .updated__knowMoreBtn {
   top: 30.1vw;
@@ -663,7 +662,7 @@ a {
 
 // Media queries
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 361px) {
   .loader__loadingText,
   .loader__count,
   .loader__percent {
@@ -1005,7 +1004,7 @@ a {
 
     .hamburger {
       position: absolute;
-      top: 1.9vw;
+      top: 3vw;
       right: 5vw;
       z-index: 10;
       width: 5.9vw;
@@ -1050,7 +1049,7 @@ a {
     /* Toggler Animation */
     .toggler:checked + .hamburger > .line {
       background: #ffeed9;
-      width: 140%;
+      width: 110%;
       top: -1.25vw;
       margin-left: 0.2vw;
       height: 2px;
@@ -1059,6 +1058,7 @@ a {
     .toggler:checked + .hamburger > .line2 {
       background: #ffeed9;
       top: 7vw;
+      width: 45%;
       height: 2px;
       transform: rotate(225deg);
     }
@@ -1092,11 +1092,8 @@ a {
       & > div {
         background: rgba(0, 172, 133, 0.985);
         border-radius: 50%;
-        width: 200vw;
+        width: 100000vh;
         height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transform: scale(0);
         transition: all 0.4s ease;
       }
@@ -1111,14 +1108,13 @@ a {
   .menu__Heading {
     position: absolute;
     color: #ccff99;
-    top: -0.5vh;
     left: 0;
     margin-left: 4.8vh;
     font-family: "Fraunces", serif;
     font-size: 6.6vw;
   }
   .hamlinks {
-    margin: 1vh 0;
+    margin: 2vh 0;
   }
   .hamburger__navlinks__shop,
   .hamburger__navlinks__about,
@@ -1128,7 +1124,7 @@ a {
     color: #fff8ef;
     text-align: center;
     transition: color 0.4s ease;
-    font-size: 6.5vh;
+    font-size: 6vh;
     font-family: "Fraunces", serif;
   }
   .menu__NeedHelpPart {
@@ -1138,7 +1134,7 @@ a {
   }
   .menu__NeedHelpPart--links,
   .menu__FollowUsPart--links {
-    margin: 0.7vh 0;
+    margin: 0.9vh 0;
   }
   .menu__NeedHelpPart--customerService,
   .menu__NeedHelpPart--locations,
@@ -1150,7 +1146,7 @@ a {
   .menu__FollowUsPart {
     position: absolute;
     left: 0;
-    top: 80vh;
+    top: 78.9vh;
   }
   .menu__FollowUsPart--Heading {
     font-size: 4.23vw;
@@ -1162,13 +1158,522 @@ a {
   .menu__FollowUsPart--fb,
   .menu__termsAndConditions {
     color: #ecffd9;
-    font-size: 2vh;
+    font-size: 2.03vh;
     font-family: $sweet-sans-reg;
   }
   .menu__termsAndConditions {
     position: absolute;
-    bottom: 10vh;
-    right: 10%;
+    bottom: 8vh;
+    left: 50vw;
+  }
+  .count {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .loader__loadingText,
+  .loader__count,
+  .loader__percent {
+    bottom: 8vw;
+    font-size: 29.5vw;
+  }
+  .loader__loadingText {
+    bottom: 40.5vw;
+    font-size: 5vw;
+  }
+  .loader__percent {
+    font-size: 21.5vw;
+    left: 37vw;
+    margin-bottom: 2vw;
+  }
+  #navbar {
+    position: relative;
+    width: 100vw;
+    height: 16.29vw;
+    z-index: 5;
+    background-color: #afe9ef;
+  }
+  .nav__logo {
+    position: absolute;
+    top: 5.5vw;
+    left: 7.8vw;
+    width: 20vw;
+    z-index: 1;
+  }
+  .navlinks__shop,
+  .navlinks__about,
+  .navlinks__pods,
+  .navlinks__news,
+  .navlinks__contact {
+    display: none;
+  }
+  .nav__bottomLine {
+    top: 16.3vw;
+    left: 3.37vw;
+    position: absolute;
+  }
+  .hero__background {
+    z-index: -1;
+    width: 100vw;
+    height: 182.5vw;
+  }
+  // Main Hero Heading
+  .hero__headingWords {
+    font-size: 8.9vw;
+    left: 7.8vw;
+    top: 35.56vw;
+    width: 69vw;
+    height: 80vw;
+    line-height: 13vw;
+  }
+  #hero__arrow {
+    width: 6.75vw;
+    margin-left: 1.73vw;
+    padding-top: 0.5vw;
+  }
+  .hero__cta {
+    left: 7.8vw;
+    top: 124.15vw;
+    width: 35.8vw;
+    height: 12.8vw;
+    font-size: 4.12vw;
+    padding-left: 5.9vw;
+  }
+  .hero__pic {
+    position: absolute;
+    width: 44vw;
+    left: 45.8vw;
+    top: 143.68vw;
+  }
+  #hero__pic--orangeLine {
+    position: absolute;
+    width: 44vw;
+    left: 46.4vw;
+    top: 158.6vw;
+  }
+
+  // How we make an impact Section
+  .makeAnImpact {
+    height: 160vw;
+  }
+  .makeAnImpact__Heading {
+    font-size: 17.2px;
+    top: 11.7vw;
+  }
+  .makeAnImpact__text {
+    width: 66.01vw;
+    top: 14.5vw;
+    font-size: 5vw;
+  }
+  .makeAnImpact__knowMoreBtn,
+  .updated__knowMoreBtn {
+    width: 35.8vw;
+    height: 11.9vw;
+    top: 78.7vw;
+    padding-left: 5.9vw;
+    font-size: 4vw;
+    z-index: 1;
+
+    #makeAnImpact__knowMoreBtn--arrow,
+    #updated__knowMoreBtn--arrow {
+      width: 2.2vw;
+      height: 3.84vw;
+      padding-right: 4.3vw;
+    }
+
+    &:focus {
+      outline: 0px;
+    }
+    &:hover {
+      animation: none;
+    }
+    &:hover > #makeAnImpact__knowMoreBtn--arrow,
+    &:hover > #updated__knowMoreBtn--arrow {
+      animation: none;
+    }
+  }
+  .makeAnImpact__LeftPic,
+  .makeAnImpact__RightPic {
+    display: none;
+  }
+  .makeAnImpact__MobilePic {
+    display: inline;
+    position: absolute;
+    top: 109.5vw;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  // Know about process Section
+  .process {
+    height: 340vw;
+  }
+  .process__Heading,
+  .process__text,
+  .process__button {
+    position: relative;
+    left: 8.5vw;
+    color: $dark-green;
+  }
+  .process__Heading {
+    font-size: 8.3vw;
+    width: 75%;
+    top: 18.7vw;
+  }
+  .process__text {
+    top: 22vw;
+    width: 75%;
+    font-size: 4.4vw;
+  }
+  .process__button--buttonHoverArrow {
+    display: none;
+  }
+  .process__button {
+    top: 31vw;
+    height: 36vw;
+    width: 36vw;
+    font-size: 5.88vw;
+  }
+  #process__button--LearnMore {
+    width: 19.2vw;
+    line-height: 5.3vw;
+    color: #fff;
+    font-family: $sweet-sans-reg;
+  }
+
+  .process__rightLine {
+    display: none;
+  }
+  .process__backBigPic {
+    top: 140vw;
+    width: 57.4vw;
+    left: 36%;
+  }
+  .process__frontSmallPic {
+    left: 6%;
+    top: 187vw;
+    width: 47.4vw;
+  }
+
+  // Updated methods
+  .updated__Heading {
+    top: 144.8vw;
+    left: 17%;
+    width: 75vw;
+    font-size: 8.8vw;
+    line-height: 10vw;
+  }
+  .updated__text {
+    top: 145.3vw;
+    left: 21.8%;
+    width: 69.9vw;
+    font-size: 4.2vw;
+  }
+  .updated__knowMoreBtn {
+    top: 150.5vw;
+    left: 68.2vw;
+    width: 37vw;
+    height: 12.9vw;
+    padding-left: 9.3vw;
+  }
+  .updated__leftPic {
+    display: none;
+  }
+  // What makes us unique
+  .makesUsUnique {
+    width: 100vw;
+    height: 235vw;
+  }
+  .makesUsUnique__Heading {
+    font-size: 17.2px;
+    top: 12.5vw;
+  }
+  .makesUsUnique__leftCard,
+  .makesUsUnique__middleCard,
+  .makesUsUnique__rightCard {
+    left: 12vw;
+  }
+  .makesUsUnique__leftCard {
+    top: 37vw;
+  }
+  .makesUsUnique__middleCard {
+    top: 101vw;
+  }
+  .makesUsUnique__rightCard {
+    top: 168vw;
+  }
+  .makesUsUnique__leftCard--icon,
+  .makesUsUnique__rightCard--icon {
+    margin-top: -0.19vw;
+    width: 11vw;
+  }
+  .makesUsUnique__middleCard--icon {
+    width: 14.3vw;
+    margin-bottom: 6px;
+  }
+  .makesUsUnique__leftCard--Heading,
+  .makesUsUnique__middleCard--Heading,
+  .makesUsUnique__rightCard--Heading {
+    font-size: 7.6vw;
+    margin-top: 4.4vw;
+    width: 77vw;
+  }
+  .makesUsUnique__leftCard--text,
+  .makesUsUnique__middleCard--text,
+  .makesUsUnique__rightCard--text {
+    font-size: 4.6vw;
+    width: 77vw;
+    margin-top: -2.58vw;
+  }
+  .makesUsUnique__leftLine,
+  .makesUsUnique__rightLine {
+    display: none;
+  }
+  // Footer
+  .footer__bg {
+    height: 112.67vw;
+  }
+  .footer__logo {
+    width: 22.7vw;
+    position: absolute;
+    left: 11.5vw;
+    top: 1095.8vw;
+    z-index: 1;
+  }
+  .footer__Heading {
+    display: none;
+  }
+  .footer__NavigatePart {
+    left: 59.2vw;
+    top: 1068.45vw;
+  }
+  .footer__NeedHelpPart {
+    left: 46.3vw;
+    top: 1113vw;
+  }
+  .footer__FollowUsPart {
+    left: 1.5vw;
+    top: 1126.4vw;
+  }
+  .footer__NavigatePart--Heading,
+  .footer__NeedHelpPart--Heading,
+  .footer__FollowUsPart--Heading {
+    font-family: $sweet-sans-reg;
+    font-size: 4.42vw;
+    margin-bottom: 2.31vw;
+  }
+  .footer__NavigatePart--links,
+  .footer__NeedHelpPart--links,
+  .footer__FollowUsPart--links {
+    font-family: $sweet-sans-reg;
+    font-size: 3.85vw;
+    margin: 1.7vw 0;
+  }
+  .footer__FollowUsPart--links {
+    text-align: left;
+  }
+
+  .footer__horizontalLine {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    border-top: 1.4px solid $base-green;
+    width: 83.5vw;
+    top: 1159vw;
+  }
+  .footer__termsAndConditions,
+  .footer__privacyPolicy {
+    display: none;
+  }
+  .footer__rightsReserved {
+    width: 61vw;
+    top: 1162.5vw;
+    font-size: 2.73vw;
+  }
+
+  .menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: inline;
+
+    .toggler {
+      position: absolute;
+      top: 1.9vw;
+      right: 5vw;
+      z-index: 11;
+      cursor: pointer;
+      width: 12.9vw;
+      height: 12.9vw;
+      opacity: 0;
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 3vw;
+      right: 5vw;
+      z-index: 10;
+      width: 5.9vw;
+      height: 5.9vw;
+      padding: 1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .notScrolledHamBg {
+      background: #afe9ef;
+    }
+    .scrolledHamBg {
+      background: #ffeed9;
+    }
+
+    /* Hamburger Line */
+    .line,
+    .line2 {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 4px;
+      background: $base-green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+    }
+    .line {
+      margin-top: 3.5vw;
+      margin-left: 2vw;
+    }
+    .line2 {
+      content: "";
+      position: absolute;
+      top: 5.5vw;
+      width: 60%;
+      height: 4px;
+    }
+    /* Toggler Animation */
+    .toggler:checked + .hamburger > .line {
+      background: #ffeed9;
+      width: 110%;
+      top: -1.25vw;
+      margin-left: 0.2vw;
+      height: 2px;
+      transform: rotate(135deg);
+    }
+    .toggler:checked + .hamburger > .line2 {
+      background: #ffeed9;
+      top: 7.5vw;
+      width: 45%;
+      height: 2px;
+      transform: rotate(225deg);
+    }
+    .toggler:checked + .hamburger {
+      background: transparent;
+    }
+    .toggler:checked ~ .menu {
+      visibility: visible;
+      height: 100vh;
+      width: 100vw;
+      transition: all 0.8s ease;
+
+      & > div {
+        border-radius: 0%;
+        transform: scale(1);
+        transition-duration: 0.7s;
+      }
+    }
+    .menu {
+      top: 0;
+      left: 0;
+      height: 17vw;
+      width: 100vw;
+      visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.8s ease;
+
+      & > div {
+        background: rgba(0, 172, 133, 0.985);
+        border-radius: 50%;
+        width: 100000vh;
+        height: 100vh;
+        transform: scale(0);
+        transition: all 0.4s ease;
+      }
+      & > div > ul {
+        margin: 0;
+        top: 15vh;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  .menu__Heading {
+    position: absolute;
+    color: #ccff99;
+    left: 0;
+    margin-left: 4.8vh;
+    font-family: "Fraunces", serif;
+    font-size: 6.6vw;
+  }
+  .hamlinks {
+    margin: 2vh 0;
+  }
+  .hamburger__navlinks__shop,
+  .hamburger__navlinks__about,
+  .hamburger__navlinks__pods,
+  .hamburger__navlinks__news,
+  .hamburger__navlinks__contact {
+    color: #fff8ef;
+    text-align: center;
+    transition: color 0.4s ease;
+    font-size: 6vh;
+    font-family: "Fraunces", serif;
+  }
+  .menu__NeedHelpPart {
+    position: relative;
+    left: 0;
+    top: 64vh;
+  }
+  .menu__NeedHelpPart--links,
+  .menu__FollowUsPart--links {
+    margin: 0.9vh 0;
+  }
+  .menu__NeedHelpPart--customerService,
+  .menu__NeedHelpPart--locations,
+  .menu__NeedHelpPart--news {
+    color: #ecffd9;
+    font-family: $sweet-sans-reg;
+    font-size: 2vh;
+  }
+  .menu__FollowUsPart {
+    position: absolute;
+    left: 0;
+    top: 78.9vh;
+  }
+  .menu__FollowUsPart--Heading {
+    font-size: 4.23vw;
+    font-family: $sweet-sans-medium;
+    color: #fff;
+    margin-bottom: 1.5vh;
+  }
+  .menu__FollowUsPart--insta,
+  .menu__FollowUsPart--fb,
+  .menu__termsAndConditions {
+    color: #ecffd9;
+    font-size: 2.03vh;
+    font-family: $sweet-sans-reg;
+  }
+  .menu__termsAndConditions {
+    position: absolute;
+    bottom: 8vh;
+    left: 50vw;
   }
   .count {
     display: none;
