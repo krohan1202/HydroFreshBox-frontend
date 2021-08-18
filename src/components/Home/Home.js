@@ -82,7 +82,7 @@ function Home() {
 
     return (
         
-        <>
+        <div>
             {/* Loader */}
             <div id="loader">
                 <div className="loader__yellowBg"></div>
@@ -262,7 +262,7 @@ function Home() {
             <Newsletter />
             <Footer />
             </div>
-        </>
+        </div>
     )
 }
 

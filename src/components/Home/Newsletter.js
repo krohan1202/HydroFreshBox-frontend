@@ -24,7 +24,7 @@ function Newsletter() {
       // console.log(values);
     event.preventDefault();
 
-    axios.post("https://client-hydrofresh.herokuapp.com/", {email})
+    axios.post(process.env.REACT_APP_BACKEND_URL, {email})
     .then((values) => {
       console.log(values, email);
       if (values.error) {
@@ -82,7 +82,6 @@ function Newsletter() {
 
 
   return (
-    <>
     <div className="newsletterSection">
       <p className="newsletter__newsletterHeading">NEWSLETTER</p>
 
@@ -115,8 +114,6 @@ function Newsletter() {
         </div>
       {/* <p>{JSON.stringify(values)}</p> */}
     </div>
-
-   </>
   );
 }
 
